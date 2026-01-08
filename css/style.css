@@ -1,0 +1,29 @@
+ ul li{
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+section{
+    padding: 80px;
+}
+body{
+    background: rgba(0, 0, 0, 1);
+}
+
+
+/* header */
+.header{
+    background: rgba(31, 31, 31, 1);
+    color: rgba(232, 232, 232, 1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+ul li a{
+    padding: 0px 40px 0px 20px;
+}
