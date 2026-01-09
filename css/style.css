@@ -13,17 +13,37 @@ section{
 }
 body{
     background: rgba(0, 0, 0, 1);
+    position: relative;
+    height: 200vh;
+}
+.whatsapp{
+    position: fixed;
+     right:25px ;
+    top: 600px;
+}
+.call{
+    position: fixed;
+    right: 25px;
+    top: 530px;
 }
 
-
 /* header */
+header{
+    z-index: 100;
+}
 .header{
     background: rgba(31, 31, 31, 1);
     color: rgba(232, 232, 232, 1);
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
+    font-size: 16px;
 }
+
 ul li a{
     padding: 0px 40px 0px 20px;
+}
+.header a:hover{
+    color:rgba(159, 193, 49, 1) ;
+    font-size: 17px;
 }
