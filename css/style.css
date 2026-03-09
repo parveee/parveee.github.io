@@ -62,27 +62,34 @@ header{
 
 /* hero */
    .hero{
-    background:url('/img/background-portfolio.png');
+    /* background:url('/img/background-portfolio.png'); */
     background-position: center;
-    
+    background-repeat: no-repeat;
     width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
- justify-content: flex-end;
+ justify-content: center;
  padding: 5px 0px;
  margin: 0;
  padding-bottom: 80px;
- 
+}
 
-
+.hero-img {
+    position: relative;
+}
+.hero-cnt {
+    position: absolute;
+    margin: auto;
+    bottom: 10px;
+    transform: translateX(50%);
 }
 .hero h1{
      font-family: "Oxanium", sans-serif;
      font-size: 100px;
      font-weight: 900;
-     color: rgb(32, 31, 31);
+     color: rgba(172, 224, 1, 0.584);
      line-height: 70px;
      letter-spacing: 0;
      
@@ -135,11 +142,14 @@ header{
 
 /* education */
 
-.education{
-    background: url('/img/edu-background1.png');
+#education{
+    background: url('/img/port-background3.png');
     background-position: center;
     background-repeat: no-repeat;
      background-size: cover;
+
+}
+.education{
    width: 100%;
    height: 100vh;
    display: flex;
@@ -167,7 +177,7 @@ header{
 }
 .card{
     background-color:rgba(18, 18, 18, 1);
-    padding: 10px 19px;
+    padding: 15px 19px;
     border-radius: 30px;
 }
 .main-heading{
@@ -187,5 +197,46 @@ header{
 .place{
     margin-bottom: 0px;
     color: rgb(221, 221, 221); 
+     line-height:25px;
+    font-weight: 300;
 }
 
+
+/* my services */
+#services{
+     background: url('/img/port-background3.png');
+      background-position: center;
+       background-repeat: no-repeat;
+     background-size: cover;
+      padding: 80px;
+}
+.services{
+
+}
+
+.main-heading2{
+     font-size: 24px;
+    font-weight: 600;
+     letter-spacing: 0px;
+     color:rgba(159, 193, 49, 1) ;
+}
+#areas{
+    padding: 80px;
+}
+.app img{
+    width: 50px;
+   
+}
+.app{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.apps{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 90px;
+}
