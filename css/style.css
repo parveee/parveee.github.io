@@ -27,7 +27,7 @@ a{
     color: inherit;
 }
 section{
-    padding: 80px;
+    padding: 80px 0px;
 }
 body{
     background: rgba(0, 0, 0, 1);
@@ -162,7 +162,7 @@ header{
     padding: 0px 2px;
 } 
 .about{
-    min-width: 300px;
+    min-width: 360px;
 }
 
 
@@ -185,7 +185,7 @@ header{
    flex-direction: column;
    align-items: center;
    justify-content: center;
-
+   
 }
 .h2{
     font-family: "K2D", sans-serif;
@@ -208,6 +208,7 @@ header{
     background-color:rgba(18, 18, 18, 1);
     padding: 15px 19px;
     border-radius: 30px;
+    min-width: 360px;
 }
 .main-heading{
     font-size: 24px;
@@ -276,6 +277,10 @@ header{
     min-width: 110px;
     justify-content: center;
     align-items: center;
+}
+.appssub{
+    display: flex;
+    flex-direction: row;
 }
 
 .areas{
