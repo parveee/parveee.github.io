@@ -3,6 +3,24 @@
     padding: 0%;
     margin: 0%;
 }
+
+
+
+
+
+
+/* .body */
+body{
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
 a{
     text-decoration: none;
     display: inline-block;
@@ -143,6 +161,9 @@ header{
 .icon img{
     padding: 0px 2px;
 } 
+.about{
+    min-width: 300px;
+}
 
 
 
