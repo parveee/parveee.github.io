@@ -8,7 +8,44 @@
 
  }
  @media screen and ( max-width:600px){
-
+        .hero-img{
+                min-width: 300px;
+                max-width: 100%;
+        }
+        .hero-cnt {
+                left: 0px;
+                width: 100%;
+                text-align: center;
+        }
+        .hero h1 {
+                font-size: 50px;
+                line-height: 60px;
+        }
+        .hero-p {
+                font-size: 20px;
+        }
+        .about {
+                min-width: 100%;
+        }
+        .apps {
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+        }
+        .appssub {
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: center;
+        }
+        .card.app {
+                min-width: 76px;
+                width: 76px;
+                height: 72px;
+                margin: 5px;
+        }
+        .app img {
+                width: 35px;
+        }
  }
  @media screen and ( max-width:200px){
 .apps{
