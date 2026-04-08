@@ -102,24 +102,25 @@ header{
 }
 .hero-cnt {
     position: absolute;
-    left: -55px;
+    left: -108px;
     bottom: 10px;
     text-align: center;
     /* z-index: -1; */
-    bottom: -130px;
+    bottom: -178px;
 }
 .hero h1 {
-    font-family: "Oxanium", sans-serif;
-    font-size: 100px;
-    font-weight: 900;
-    color: rgb(101 131 1);
-    line-height: 70px;
-    letter-spacing: 0;
+    font-family:  "Orbitron", sans-serif; 
+    font-size: 90px;
+    font-weight: 800;
+    color: rgba(195, 197, 191, 1);
+    line-height: 80px;
+    letter-spacing: 3px;
+    
 }
 .hero-p{
     font-size: 30px;
     font-weight: 600;
-    color: rgba(195, 197, 191, 1);
+    color:rgb(101 131 1);
     padding: 0px 0px;
     display: flex;
    line-height: 45px;
@@ -205,7 +206,7 @@ header{
     
 }
 .card{
-    background-color:rgba(18, 18, 18, 1);
+    background-color:rgb(23, 26, 23);
     padding: 15px 19px;
     border-radius: 30px;
     min-width: 300px;
@@ -253,12 +254,12 @@ header{
 }
 #areas{
 
-    background: url('/img/app.png');
+    background: url('../img/app.png');
     /* padding: 80px; */
     background-position: center;
        background-repeat: no-repeat;
      background-size: cover;
-    height: 100vh;
+    height: 100%;
     display: flex;
      align-items: center;
      text-align: center;
