@@ -8,6 +8,16 @@
 
  }
  @media screen and ( max-width:600px){
+        .header {
+            padding: 15px 20px !important;
+        }
+        .logo-link img {
+            height: 40px !important;
+            width: auto;
+        }
+        .custom-toggler {
+            padding: 5px !important;
+        }
         .hero-img{
                 min-width: 300px;
                 max-width: 100%;

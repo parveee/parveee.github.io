@@ -76,10 +76,16 @@ header{
     transition:0.3s ;
      font-size: 16px;
 }
+.desktop-nav {
+    gap: 50px !important; /* Adds wide spacing between navigation links on desktop */
+}
+.header a {
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block; /* Transform requires inline-block to apply smoothly */
+}
 .header a:hover{
     color:rgba(159, 193, 49, 1) ;
-    font-size: 20px;
-    font-weight: 500;
+    transform: scale(1.25);
 }
 
 
@@ -413,6 +419,76 @@ button{
 }
 .f-fav{
     padding: 20px 0px;
+}
+
+/* Custom Toggler for Mobile */
+.custom-toggler {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding: 8px;
+    cursor: pointer;
+}
+.custom-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+.custom-toggler .toggler-line {
+    display: block;
+    width: 32px;
+    height: 3px;
+    background-color: rgba(159, 193, 49, 1); /* Green from portfolio theme */
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Fullscreen Mobile Menu Background */
+.fullscreen-mobile-menu.offcanvas-end {
+    width: 100vw !important; /* Fullscreen width */
+    background-color: rgba(18, 18, 18, 1); /* Black background from theme */
+    border: none;
+}
+
+/* Mobile Menu Links */
+.fullscreen-mobile-menu .mobile-nav .nav-link {
+    color: rgba(232, 232, 232, 1);
+    font-size: 24px;
+    font-weight: 500;
+    transition: 0.3s;
+    letter-spacing: 1px;
+}
+.fullscreen-mobile-menu .mobile-nav .nav-link:hover {
+    color: rgba(159, 193, 49, 1);
+}
+
+/* Custom Close Button for Mobile Menu */
+.custom-close-btn {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.custom-close-btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+.custom-close-btn .close-line {
+    position: absolute;
+    width: 32px;
+    height: 3px;
+    background-color: rgba(159, 193, 49, 1); /* Green color for the X */
+    border-radius: 3px;
+}
+.custom-close-btn .line1 {
+    transform: rotate(45deg);
+}
+.custom-close-btn .line2 {
+    transform: rotate(-45deg);
 }
 
 
