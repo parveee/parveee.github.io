@@ -1,52 +1,59 @@
-@media screen and ( max-width: 1199px){
+@media screen and (max-width: 1199px) {}
 
-}
- @media screen and ( max-width:1024px){
+@media screen and (max-width:1024px) {}
 
- }
- @media screen and ( max-width:1024px){
+@media screen and (max-width:1024px) {}
 
- }
- @media screen and ( max-width:600px){
+@media screen and (max-width:600px) {
         .header {
-            padding: 15px 20px !important;
+                padding: 15px 20px !important;
         }
+
         .logo-link img {
-            height: 40px !important;
-            width: auto;
+                height: 40px !important;
+                width: auto;
         }
+
         .custom-toggler {
-            padding: 5px !important;
+                padding: 5px !important;
         }
-        .hero-img{
+
+        .hero-img {
                 min-width: 300px;
                 max-width: 100%;
         }
+
         .hero-cnt {
                 left: 0px;
                 width: 100%;
                 text-align: center;
         }
+
         .hero h1 {
                 font-size: 50px;
                 line-height: 60px;
         }
+
         .hero-p {
                 font-size: 20px;
         }
+
         .about {
                 min-width: 100%;
         }
+
         .apps {
                 width: 100%;
                 flex-direction: column;
                 align-items: center;
         }
+
         .appssub {
                 flex-wrap: wrap;
                 flex-direction: row;
                 justify-content: center;
         }
+
         .card.app {
                 min-width: 76px;
                 width: 76px;
@@ -54,15 +61,16 @@
                 margin: 5px;
                 border-radius: 20px;
         }
+
         .app img {
                 width: 35px;
         }
- }
- @media screen and ( max-width:200px){
-.apps{
-            flex-direction:column ;
-         }
- }
- @media screen and ( max-width:100px){
-         
- }
+}
+
+@media screen and (max-width:200px) {
+        .apps {
+                flex-direction: column;
+        }
+}
+
+@media screen and (max-width:100px) {}
