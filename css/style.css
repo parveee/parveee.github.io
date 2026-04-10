@@ -319,8 +319,8 @@ header{
 }
 .app{
     background-color:rgb(0, 0, 0) ;
-   border-width: 0.1px;
-    border-color:rgba(159, 193, 49, 1)  ;
+   /* border-width: 0.1px;
+    border-color:rgba(159, 193, 49, 1)  ; */
 }
 
 /* .work */
