@@ -332,7 +332,9 @@ header{
 }
 
 /* .work */
-
+.slid img{
+    width: 100px;
+}
 /* .myrecent{
     padding-top: 70px;
 } */

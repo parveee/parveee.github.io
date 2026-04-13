@@ -19,10 +19,13 @@
         href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -32,9 +35,10 @@
                 <a href="index.html" class="d-flex align-items-center logo-link">
                     <img src="img/fav-icon.svg" alt="">
                 </a>
-                
+
                 <!-- Toggler Button (Mobile) -->
-                <button class="navbar-toggler custom-toggler d-lg-none border-0 shadow-none bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                <button class="navbar-toggler custom-toggler d-lg-none border-0 shadow-none bg-transparent"
+                    type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
                     <span class="toggler-line"></span>
                     <span class="toggler-line"></span>
                     <span class="toggler-line"></span>
@@ -55,21 +59,29 @@
                 </div>
 
                 <!-- Mobile Menu Offcanvas -->
-                <div class="offcanvas offcanvas-end fullscreen-mobile-menu" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+                <div class="offcanvas offcanvas-end fullscreen-mobile-menu" tabindex="-1" id="mobileMenu"
+                    aria-labelledby="mobileMenuLabel">
                     <div class="offcanvas-header justify-content-end p-4">
-                        <button type="button" class="custom-close-btn bg-transparent border-0" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <button type="button" class="custom-close-btn bg-transparent border-0"
+                            data-bs-dismiss="offcanvas" aria-label="Close">
                             <span class="close-line line1"></span>
                             <span class="close-line line2"></span>
                         </button>
                     </div>
                     <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center">
                         <ul class="nav flex-column text-center w-100 mobile-nav">
-                            <li class="nav-item mb-4"><a class="nav-link" href="index.html" data-bs-dismiss="offcanvas">Home</a></li>
-                            <li class="nav-item mb-4"><a class="nav-link" href="#about" data-bs-dismiss="offcanvas">About Us</a></li>
-                            <li class="nav-item mb-4"><a class="nav-link" href="#services" data-bs-dismiss="offcanvas">Services</a></li>
-                            <li class="nav-item mb-4"><a class="nav-link" href="#skills" data-bs-dismiss="offcanvas">Skills</a></li>
-                            <li class="nav-item mb-4"><a class="nav-link" href="#project" data-bs-dismiss="offcanvas">Project</a></li>
-                            <li class="nav-item mb-4"><a class="nav-link" href="#contact" data-bs-dismiss="offcanvas">Contact Us</a></li>
+                            <li class="nav-item mb-4"><a class="nav-link" href="index.html"
+                                    data-bs-dismiss="offcanvas">Home</a></li>
+                            <li class="nav-item mb-4"><a class="nav-link" href="#about"
+                                    data-bs-dismiss="offcanvas">About Us</a></li>
+                            <li class="nav-item mb-4"><a class="nav-link" href="#services"
+                                    data-bs-dismiss="offcanvas">Services</a></li>
+                            <li class="nav-item mb-4"><a class="nav-link" href="#skills"
+                                    data-bs-dismiss="offcanvas">Skills</a></li>
+                            <li class="nav-item mb-4"><a class="nav-link" href="#project"
+                                    data-bs-dismiss="offcanvas">Project</a></li>
+                            <li class="nav-item mb-4"><a class="nav-link" href="#contact"
+                                    data-bs-dismiss="offcanvas">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -233,6 +245,20 @@
         <div class="container">
             <div class="works">
                 <h2 class="h2 text-uppercase myrecent">my recent <span>works</span> </h2>
+                <div class="works-slid">
+                    <div class="slid">
+                        <img src="img/pro-mokup1.png" alt="">
+                    </div>
+                    <div class="slid">
+                        <img src="img/pro-mokup2.png" alt="">
+                    </div>
+                    <div class="slid">
+                        <img src="img/mokup12.png" alt="">
+                    </div>
+                    <div class="slid">
+                        <img src="img/mokup13.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -243,7 +269,7 @@
                     <div class="col-md-4">
                         <div class="f-left1">
                             <div class="f-left">
-                                <img class="f-fav" src="img/fav-icon.svg" alt="" width="50px" >
+                                <img class="f-fav" src="img/fav-icon.svg" alt="" width="50px">
                                 <!-- <p class="footer-p">Designers are quiet perfectionist—turning ideas into clean visuals,
                                     obsessing over spacing, alignment, and flow, always thinking from the user’s
                                     perspective, refining every detail until the design feels simple, intuitive, and
@@ -319,6 +345,9 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
