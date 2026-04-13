@@ -22,11 +22,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -53,9 +57,9 @@
                             <li><a href="index.html">Home</a></li>
                             <li><a href="#about">About</a></li>
                             <li><a href="#services">Services</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#project">Project</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#areas">Skills</a></li>
+                            <li><a href="#works">Project</a></li>
+                            <li><a href="#footer">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -107,14 +111,16 @@
         <div class="container">
             <div class="hero">
 
-                <div class="hero-img">
-                    <img src="img/background-portfolio.png" alt="profile img">
-
-                    <div class="hero-cnt">
-                        <h1 class="text-uppercase">sana Parveen</h1>
-                        <p class="hero-p">UI/UX DESIGNER &FRONT-END DEVELOPER</p>
+                <div class="row align-items-center">
+                    <div class="col-md-6 d-flex justify-content-md-end justify-content-center">
+                        <img src="img/Document-me123.png" alt="Profile of Sana Parveen" class="img-fluid hero-profile-img">
                     </div>
-
+                    <div class="col-md-6 mt-4 mt-md-0">    
+                        <div class="hero-cnt">
+                            <h1 class="text-uppercase">Sana<br>Parveen</h1>
+                            <p class="hero-p">UI/UX DESIGNER & FRONT-END<br>DEVELOPER</p>
+                        </div>
+                    </div>
                 </div>
 
 
@@ -125,7 +131,7 @@
         <div class="container">
             <div class="about">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-6">
                         <h3 class="about-h3">ABOUT ME</h3>
                         <p class="about-p">Hello, I’m a UI/UX Designer passionate about creating meaningful and
                             intuitive digital experiences. My approach is rooted in understanding users first—how they
@@ -264,7 +270,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer id="footer">
         <div class="container">
             <div class="footer">
                 <div class="row ">
@@ -314,13 +320,13 @@
                                     <a href="#services">Services</a>
                                 </li>
                                 <li>
-                                    <a href="#skills">Skills</a>
+                                    <a href="#areas">Skills</a>
                                 </li>
                                 <li>
-                                    <a href="#project">Project</a>
+                                    <a href="#works">Project</a>
                                 </li>
                                 <li>
-                                    <a href="#contact">Contact</a>
+                                    <a href="#footer">Contact</a>
                                 </li>
                             </ul>
                         </nav>
@@ -366,6 +372,15 @@
                 autoplaySpeed: 1000,
                 prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-chevron-left"></i></button>',
                 nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-chevron-right"></i></button>',
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
             });
         });
     </script>

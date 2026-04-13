@@ -109,39 +109,76 @@ header{
 #hero{
     padding-top: 1px;
 }
+.hero img{
+    padding-top: 90px;
+    /* padding-right: 40px; */
+}
+.align-items-center{
+    padding-right: 110px;
+}
 
-.hero-img {
-    position: relative;
-}
+
+/* Cleaned up old absolute positioning code */
 .hero-cnt {
-    position: absolute;
-    left: -108px;
-    bottom: 10px;
-    text-align: center;
-    /* z-index: -1; */
-    bottom: -178px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
 }
+
+@media (min-width: 768px) {
+    .hero-cnt {
+        align-items: flex-start;
+        
+    }
+}
+
+
 .hero h1 {
-    font-family:  "Orbitron", sans-serif; 
+    font-family: "Orbitron", sans-serif; 
     font-size: 90px;
     font-weight: 800;
     color: rgba(195, 197, 191, 1);
     line-height: 80px;
     letter-spacing: 3px;
-    
+    margin-bottom: 20px;
+    text-align: left;
 }
-.hero-p{
-    font-size: 30px;
+
+.hero-p {
+    font-size: 28px;
     font-weight: 600;
-    color:rgb(101 131 1);
-    padding: 0px 0px;
-    display: flex;
-   line-height: 45px;
-   width: 100%;
-    max-width: 450px;
+    color: rgba(159, 193, 49, 1);
     text-align: center;
-    margin: auto;
-    line-height: 1;
+    line-height: 1.4;
+    margin: 0;
+    max-width: fit-content;
+
+}
+
+/* Mobile responsiveness for heading */
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+    .hero img {
+        padding-top: 0;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    .hero-cnt {
+        padding-top: 0;
+    }
+    .hero h1 {
+        font-size: 45px;
+        line-height: 50px;
+        text-align: center;
+    }
+    .hero-p {
+        font-size: 16px;
+    }
 }
 
 
@@ -332,8 +369,13 @@ header{
 }
 
 /* .work */
+.slid {
+    padding: 0 15px;
+    
+}
 .slid img{
     width: 500px;
+    border-radius: 20px;
 }
 
 button.slick-next.slick-arrow,
@@ -504,11 +546,11 @@ button{
     background-color: rgba(159, 193, 49, 1); /* Green color for the X */
     border-radius: 3px;
 }
-.custom-close-btn .line1 {
+/* .custom-close-btn .line1 {
     transform: rotate(45deg);
 }
 .custom-close-btn .line2 {
     transform: rotate(-45deg);
-}
+} */
 
 
