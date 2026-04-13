@@ -333,8 +333,26 @@ header{
 
 /* .work */
 .slid img{
-    width: 100px;
+    width: 500px;
 }
+
+button.slick-next.slick-arrow,
+button.slick-prev.slick-arrow {
+    position: absolute;
+    top: 45%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.281);
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+button.slick-next.slick-arrow {
+    right: -13px;
+}
+button.slick-prev.slick-arrow {
+    left: -13px;
+}
+
 /* .myrecent{
     padding-top: 70px;
 } */
