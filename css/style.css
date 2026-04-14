@@ -63,13 +63,14 @@
      width: 100%;
 
  }
+ 
 
  .header {
      background: rgba(31, 31, 31, 1);
      color: rgba(232, 232, 232, 1);
      margin-top: 20px;
      border-radius: 10px;
-     padding: 20px 50px;
+     padding: 5px 50px 5px 10px;
      font-size: 20px;
  }
 
@@ -425,7 +426,7 @@
  }
 
  .slid img {
-     width: 500px;
+     width: 600px;
      border-radius: 20px;
  }
 
@@ -545,7 +546,7 @@
  }
 
  .f-fav {
-     padding: 20px 0px;
+     padding: 10px 0px;
  }
 
  /* Custom Toggler for Mobile */
