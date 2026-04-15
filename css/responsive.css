@@ -4,7 +4,7 @@
 
 @media screen and (max-width:768px) {
         .header {
-                padding: 15px 20px !important;
+                padding: 10px 20px !important;
         }
 
         .logo-link img {
@@ -13,14 +13,20 @@
         }
 
         .custom-toggler {
-                padding: 5px !important;
+                padding: 10px !important;
         }
 
         .hero-img {
                 min-width: 250px;
                 max-width: 100%;
         }
-
+        .header {
+        padding: 10px 20px !important;
+    }
+.logo-link img {
+        height: 50px !important;
+        width: auto;
+    }
         .hero-cnt {
                 left: 0px;
                 width: 100%;
