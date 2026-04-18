@@ -33,6 +33,12 @@
      color: inherit;
  }
 
+ .split-char,
+ .split-word {
+     display: inline-block;
+     will-change: transform, opacity, filter;
+ }
+
  section {
      padding: 50px 0px;
  }
@@ -120,7 +126,21 @@
  }
 
  #hero {
+     position: relative;
+     overflow: hidden;
      padding-top: 1px;
+ }
+
+ #hero-shape-grid {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     /* Place behind text */
+     pointer-events: all;
+     /* Allow mouse interaction for hover effect */
  }
 
  .hero img {
@@ -138,7 +158,7 @@
      display: flex;
      flex-direction: column;
      align-items: center;
-     padding-top: 150px;
+     padding-top: 110px;
  }
 
  @media (min-width: 768px) {
@@ -290,22 +310,22 @@
  }
 
  .card {
-    background: linear-gradient(145deg, #1e211e, #0c0d0c);
-    padding: 15px 20px;
-    border-radius: 30px;
-    min-width: 300px;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border: 1px solid rgba(159, 193, 49, 0.1);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    height: 100%;
-}
+     background: linear-gradient(145deg, #1e211e, #0c0d0c);
+     padding: 15px 20px;
+     border-radius: 30px;
+     min-width: 300px;
+     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+     border: 1px solid rgba(159, 193, 49, 0.1);
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+     height: 100%;
+ }
 
-.card:hover {
-    transform: translateY(-10px);
-    background: linear-gradient(145deg, #252a25, #121412);
-    border-color: rgba(159, 193, 49, 0.4);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 15px rgba(159, 193, 49, 0.15);
-}
+ .card:hover {
+     transform: translateY(-10px);
+     background: linear-gradient(145deg, #252a25, #121412);
+     border-color: rgba(159, 193, 49, 0.4);
+     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 15px rgba(159, 193, 49, 0.15);
+ }
 
  .main-heading {
      font-size: 24px;
@@ -419,17 +439,17 @@
  }
 
  .app {
-    background: linear-gradient(145deg, #1a1a1a, #020202);
-    border: 1px solid rgba(159, 193, 49, 0.05);
-    transition: all 0.3s ease;
-}
+     background: linear-gradient(145deg, #1a1a1a, #020202);
+     border: 1px solid rgba(159, 193, 49, 0.05);
+     transition: all 0.3s ease;
+ }
 
-.app:hover {
-    transform: scale(1.1) rotate(2deg);
-    border-color: rgba(159, 193, 49, 0.5);
-    box-shadow: 0 0 20px rgba(159, 193, 49, 0.2);
-    background: linear-gradient(145deg, #222222, #050505);
-}
+ .app:hover {
+     transform: scale(1.1) rotate(2deg);
+     border-color: rgba(159, 193, 49, 0.5);
+     box-shadow: 0 0 20px rgba(159, 193, 49, 0.2);
+     background: linear-gradient(145deg, #222222, #050505);
+ }
 
 
 

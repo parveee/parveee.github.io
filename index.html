@@ -108,10 +108,13 @@
     </div>
 
     <!-- hero section -->
-    
 
 
-     <section id="hero">   
+
+
+    <section id="hero">
+        <!-- ShapeGrid Background Canvas -->
+        <canvas id="hero-shape-grid"></canvas>
         <div class="container">
             <div class="hero">
 
@@ -122,6 +125,7 @@
                     </div>
                     <div class="col-md-6 mt-4 mt-md-0">
                         <div class="hero-cnt">
+
                             <h1 class="text-uppercase">Sana<br>Parveen</h1>
                             <p class="hero-p">UI/UX DESIGNER & FRONT-END<br>DEVELOPER</p>
                         </div>
@@ -363,7 +367,13 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
-    <script src="script.js"></script>
+
+    <!-- GSAP and SplitText dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+
+    <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
         integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
