@@ -4,29 +4,24 @@
 
 @media screen and (max-width:768px) {
         .header {
-                padding: 10px 20px !important;
+                padding: 4px 12px !important;
+                margin-top: 5px !important;
         }
 
         .logo-link img {
-                height: 40px !important;
+                height: 32px !important;
                 width: auto;
         }
 
         .custom-toggler {
-                padding: 10px !important;
+                padding: 5px !important;
         }
 
-        .hero-img {
-                min-width: 250px;
-                max-width: 100%;
+        .hero {
+                padding-top: 100px !important;
+                padding-bottom: 40px !important;
         }
-        .header {
-        padding: 10px 20px !important;
-    }
-.logo-link img {
-        height: 50px !important;
-        width: auto;
-    }
+
         .hero-cnt {
                 left: 0px;
                 width: 100%;
@@ -78,7 +73,7 @@
         }
 
         .app img {
-                width: 35px;
+                width: 80px;
         }
 }
 

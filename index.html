@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sana Parveen</title>
-    <link rel="shotcut icon" href="img/fav-icon.svg">
+    <link rel="shotcut icon" href="img/logo-pro5.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -107,15 +108,19 @@
     </div>
 
     <!-- hero section -->
-    <section id="hero">
+    
+
+
+     <section id="hero">   
         <div class="container">
             <div class="hero">
 
                 <div class="row align-items-center">
                     <div class="col-md-6 d-flex justify-content-md-end justify-content-center">
-                        <img src="img/Document-me123.png" alt="Profile of Sana Parveen" class="img-fluid hero-profile-img">
+                        <img src="img/Document-me123.png" alt="Profile of Sana Parveen"
+                            class="img-fluid hero-profile-img">
                     </div>
-                    <div class="col-md-6 mt-4 mt-md-0">    
+                    <div class="col-md-6 mt-4 mt-md-0">
                         <div class="hero-cnt">
                             <h1 class="text-uppercase">Sana<br>Parveen</h1>
                             <p class="hero-p">UI/UX DESIGNER & FRONT-END<br>DEVELOPER</p>
@@ -162,9 +167,9 @@
             <div class="services">
                 <h2 class="h2 text-uppercase">my <span>Services</span> </h2>
                 <div class="cards">
-                    <div class="row g-2">
+                    <div class="row g-4">
                         <div class="col-md-6">
-                            <div class="card">
+                            <div class="card" data-aos="fade-up">
                                 <img src="img/ui-ux-education-portfolio.svg" alt="" class="icon-img">
                                 <h3 class="main-heading2">UI/UX Designing</h3>
                                 <p class="place">I design clean, intuitive and user focused interfaces for websites and
@@ -172,7 +177,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="card">
+                            <div class="card" data-aos="fade-up">
                                 <img src="img/front-end2.svg" alt="" class="icon-img">
                                 <h3 class="main-heading2">front-end developer</h3>
                                 <p class="place">I turn designs into responsive, modern interfaces using clean and
@@ -180,7 +185,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="card">
+                            <div class="card" data-aos="fade-up">
                                 <img src="img/wireframing.svg" alt="" class="icon-img">
                                 <h3 class="main-heading2">Wirefaraming & Prototyping</h3>
                                 <p class="place">I create low-fidelity wireframes and clickable prototypes that help
@@ -188,7 +193,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="card">
+                            <div class="card" data-aos="fade-up">
                                 <img src="img/app.svg" alt="" class="icon-img">
                                 <h3 class="main-heading2">App Designing</h3>
                                 <p class="place">Designing modern , intutive and user- friendly mobile app interfaces
@@ -383,6 +388,10 @@
                 ]
             });
         });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
