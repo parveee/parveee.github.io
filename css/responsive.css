@@ -78,7 +78,7 @@
                 justify-content: center;
         }
         .services .card{
-                min-height: 200px;
+                min-height: 250px !important;
         }
         .main-hearding2{
              padding: ;   
