@@ -18,14 +18,19 @@
         }
 
         .hero {
-                padding-top: 60px !important;
-                padding-bottom: 41px !important;
+                padding-top: 120px !important;
+                padding-bottom: 60px !important;
+                height: auto !important;
+                min-height: auto !important;
         }
 
         .hero-profile-img {
-                max-width: 260px !important;
+                max-width: 280px !important;
+                width: 100%;
                 margin: 0 auto;
                 display: block;
+                position: relative;
+                z-index: 10;
         }
 
         .hero-cnt {
