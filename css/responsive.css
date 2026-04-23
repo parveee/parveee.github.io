@@ -58,16 +58,12 @@
         .about {
                 min-width: 100%;
         }
-        .services .card{
-                height: 230px;
-        }
 
         .areas .col-md-6 {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
         }
-        
 
         .apps {
                 width: 100%;
@@ -81,11 +77,17 @@
                 flex-direction: row;
                 justify-content: center;
         }
+        .services .card{
+                min-height: 200px;
+        }
+        .main-hearding2{
+             padding: ;   
+        }
 
         .card.app {
-                min-width: 80px;
-                width: 80px;
-                height: 80px;
+                min-width: 76px;
+                width: 76px;
+                height: 72px;
                 margin: 5px;
                 border-radius: 20px;
         }
