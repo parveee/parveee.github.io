@@ -32,8 +32,9 @@
                 position: relative;
                 z-index: 10;
         }
-        .about{
-                padding-top: 60pX !important;
+
+        .about {
+                padding-top: 70pX !important;
         }
 
         .hero-cnt {
@@ -59,52 +60,68 @@
                 min-width: 100%;
         }
 
+        .areas {
+                padding-top: 70px !important;
+                padding-bottom: 60px !important;
+        }
+
         .areas .col-md-6 {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                width: 100%;
         }
 
         .apps {
                 width: 100%;
-                flex-direction: row;
-                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
                 align-items: center;
         }
 
         .appssub {
-                flex-wrap: wrap;
+                display: flex;
                 flex-direction: row;
+                gap: 5px;
                 justify-content: center;
+                width: 100%;
         }
-        .services .card{
+
+        .services .card {
                 min-height: 250px !important;
-        }
-        .main-hearding2{
-             padding: ;   
         }
 
         .card.app {
                 min-width: 76px;
                 width: 76px;
-                height: 72px;
+                height: 76px;
                 margin: 5px;
                 border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
         }
 
         .app img {
-                width: 80px;
+                width: 45px;
+                height: auto;
         }
 }
 
 @media screen and (max-width:576px) {
+        .areas {
+                padding-top: 100px !important;
+                padding-bottom: 100px !important;
+        }
+
         .apps {
                 flex-direction: column;
         }
-}
 
-@media screen and (max-width:200px) {
-        .apps {
-                flex-direction: column;
+        .appssub {
+                flex-direction: row;
+                justify-content: center;
         }
 }
