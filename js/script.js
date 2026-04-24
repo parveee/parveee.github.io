@@ -238,4 +238,40 @@ document.addEventListener('DOMContentLoaded', () => {
         hoverFillColor: 'rgba(159, 193, 49, 0.2)', // Interactive theme green
         hoverTrailAmount: 8
     });
+
+    // --- NEW: Mobile Menu Fix ---
+    // Close mobile menu when a navigation link is clicked and scroll to section
+    const mobileLinks = document.querySelectorAll('.mobile-nav .nav-link');
+    const offcanvasElement = document.getElementById('mobileMenu');
+    
+    if (offcanvasElement && mobileLinks.length > 0) {
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                const href = link.getAttribute('href');
+                
+                // If it's an anchor link (starts with #)
+                if (href.startsWith('#')) {
+                    e.preventDefault();
+                    
+                    const targetSection = document.querySelector(href);
+                    if (targetSection) {
+                        // 1. Close the offcanvas
+                        const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement) || new bootstrap.Offcanvas(offcanvasElement);
+                        bsOffcanvas.hide();
+
+                        // 2. Scroll to section after a short delay
+                        setTimeout(() => {
+                            const headerHeight = document.querySelector('header').offsetHeight || 80;
+                            const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                            
+                            window.scrollTo({
+                                top: targetPosition,
+                                behavior: 'smooth'
+                            });
+                        }, 350); // Matches typical offcanvas transition time
+                    }
+                }
+            });
+        });
+    }
 });

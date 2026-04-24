@@ -43,6 +43,7 @@
      padding: 50px 0px;
  } */
 
+
  body {
      background: rgba(0, 0, 0, 1);
      position: relative;
@@ -102,7 +103,7 @@
      /* Transform requires inline-block to apply smoothly */
  }
 
- .header a:hover {
+ .header a:hover:not(.logo-link) {
      color: rgba(159, 193, 49, 1);
      transform: scale(1.25);
  }
@@ -679,9 +680,9 @@
      border-radius: 3px;
  }
 
- /* .custom-close-btn .line1 {
+ .custom-close-btn .line1 {
     transform: rotate(45deg);
 }
 .custom-close-btn .line2 {
     transform: rotate(-45deg);
-} */
+}
