@@ -689,7 +689,7 @@
      position: absolute;
      width: 32px;
      height: 3px;
-     background-color: rgba(159, 193, 49, 1);
+     background-color: rgb(158, 191, 49);
      /* Green color for the X */
      border-radius: 3px;
  }
