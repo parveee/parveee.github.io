@@ -53,7 +53,7 @@
  .whatsapp {
      position: fixed;
      right: 25px;
-     bottom: 50px;
+     bottom: 45px;
      z-index: 10;
  }
 
@@ -73,7 +73,11 @@
  .call {
      transition: all 0.3s ease-in-out;
      border-radius: 50%;
+     border: 1px solid rgb(106, 104, 104,0.5);
+     
+
  }
+ 
 
  .whatsapp:hover,
  .call:hover {
@@ -535,7 +539,7 @@
 
  .project-link a {
     position: absolute;
-    left: 200px;
+    left: 50px;
     bottom: 300px;
     z-index: 2;
     color: #bababa;
