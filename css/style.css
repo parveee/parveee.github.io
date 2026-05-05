@@ -540,7 +540,7 @@
  .project-link a {
     position: absolute;
     left: 50px;
-    bottom: 300px;
+    bottom: 340px;
     z-index: 2;
     color: #bababa;
     background-color: #292929;
@@ -548,11 +548,12 @@
     border-radius: 20px;
     font-size: 16px;
     font-weight: 400;
+     border: 1px solid rgb(106, 104, 104,0.5);
     
     /* border: 0.5px solid #fffbfb; */
  }
  .project-link a:hover{
-     border-color: rgba(159, 193, 49, 0.5);
+     border-color: rgba(152, 160, 126, 0.5);
      box-shadow: 0 0 20px rgba(220, 221, 219, 0.2);
      background: linear-gradient(145deg, #222222, #050505);
  }
