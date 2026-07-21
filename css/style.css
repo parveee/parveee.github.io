@@ -255,7 +255,7 @@
 
 
  /* about */
- .about {
+ /* .about {
      padding: 70px 5px;
  }
 
@@ -272,29 +272,51 @@
      color: rgba(242, 242, 242, 1);
      line-height: 30px;
      font-weight: 300;
- }
+ } */
 
  .downlod {
-     color: rgba(36, 36, 36, 1);
-     background-color: rgba(159, 193, 49, 1);
-     padding: 4px 20px;
-     border-radius: 5px;
-     font-size: 16px;
+     color: rgb(159, 193, 49, 1);
+     background-color: rgba(36, 36, 36, 1);
+     
+     box-shadow: 0 0 20px rgba(220, 221, 219, 0.2);
+      border: 1px solid rgb(106, 104, 104,0.5);
+     padding: 10px 10px 10px 25px;
+     border-radius: 25px;
+     margin-top: 10px;
+     font-size: 18px;
+     letter-spacing:0.5px ;
      font-weight: 400;
+       transition: all 0.3s ease-in-out;
  }
+.downlod:hover{
+    transform: scale(1.0) ;
+     filter: drop-shadow(0 0 10px rgba(156, 160, 140, 0.4));
+}
+
+ .downlod img{
+    width: 30px;
+ }
+
+
 
  .icon {
      padding: 20px 0px;
 
+     
  }
+
 
  .icon img {
-     padding: 0px 2px;
+     padding: 0px 5px;
+     width: 60px;
+       transition: all 0.3s ease-in-out;
+ }
+ .icon img:hover{
+    transform: scale(1.0) ;
+     border: 1px solid rgb(106, 104, 104,0.5);
+     border-radius: 50px 50px;
  }
 
- .about {
-     min-width: 360px;
- }
 
 
 
