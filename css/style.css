@@ -302,6 +302,7 @@
  .icon {
      padding: 20px 0px;
 
+
      
  }
 
@@ -411,7 +412,9 @@
      background-size: cover;
       padding: 80px;
 } */
- .services {}
+ /* .services {
+
+ } */
 
  .main-heading2 {
      font-size: 24px;
