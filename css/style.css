@@ -562,7 +562,7 @@
       
 }
 
- .project-link a {
+ /* .project-link a {
     position: absolute;
     left: 50px;
     bottom: 340px;
@@ -576,12 +576,12 @@
      border: 1px solid rgb(106, 104, 104,0.5);
     
     /* border: 0.5px solid #fffbfb; */
- }
+ /* }
  .project-link a:hover{
      border-color: rgba(152, 160, 126, 0.5);
      box-shadow: 0 0 20px rgba(220, 221, 219, 0.2);
      background: linear-gradient(145deg, #222222, #050505);
- }
+ } */ 
 
  /* .myrecent{
     padding-top: 70px;
