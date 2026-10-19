@@ -523,16 +523,86 @@
  /* .work */
  .slid {
      padding: 0 15px;
-
+     
  }
 
  #works {
      padding: 100px 0px 120px 0px;
  }
 
- .slid img {
-     width: 600px;
+ /* New two-column slide layout */
+ .slid-inner {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     gap: 30px;
+     background: linear-gradient(145deg, #1e211e, #0c0d0c);
+     border: 1px solid rgba(159, 193, 49, 0.1);
      border-radius: 20px;
+     padding: 25px;
+     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ }
+
+ .slid-inner:hover {
+     border-color: rgba(159, 193, 49, 0.35);
+     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 15px rgba(159, 193, 49, 0.1);
+ }
+
+ .slid-img {
+     flex: 0 0 auto;
+     width: 55%;
+ }
+
+ .slid-img img {
+     width: 100%;
+     height: auto;
+     border-radius: 12px;
+     display: block;
+ }
+
+ .slid-info {
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+     gap: 12px;
+ }
+
+ .slid-title {
+     font-family: "K2D", sans-serif;
+     font-size: 26px;
+     font-weight: 600;
+     color: rgba(232, 232, 232, 1);
+     margin: 0;
+ }
+
+ .slid-desc {
+     font-size: 14px;
+     color: rgba(180, 180, 180, 1);
+     font-weight: 300;
+     line-height: 24px;
+     margin: 0;
+ }
+
+ .view-project-btn {
+     display: inline-block;
+     color: rgba(159, 193, 49, 1);
+     border: 1px solid rgba(159, 193, 49, 0.5);
+     background: transparent;
+     padding: 7px 20px;
+     border-radius: 20px;
+     font-size: 13px;
+     font-weight: 500;
+     letter-spacing: 1px;
+     width: fit-content;
+     transition: all 0.3s ease-in-out;
+ }
+
+ .view-project-btn:hover {
+     background-color: rgba(159, 193, 49, 1);
+     color: rgba(18, 18, 18, 1);
+     border-color: rgba(159, 193, 49, 1);
+     box-shadow: 0 0 15px rgba(159, 193, 49, 0.3);
+     transform: translateY(-2px);
  }
 
  button.slick-next.slick-arrow,
@@ -553,14 +623,24 @@
  button.slick-prev.slick-arrow {
      left: -13px;
  }
- .slid  {
+
+ .slid {
      position: relative;
      z-index: 1;
-      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
  }
- .slid:hover{
-      
-}
+
+ /* Responsive: stack on mobile */
+ @media (max-width: 768px) {
+     .slid-inner {
+         flex-direction: column;
+     }
+     .slid-img {
+         width: 100%;
+     }
+ }
+
+
 
  /* .project-link a {
     position: absolute;
