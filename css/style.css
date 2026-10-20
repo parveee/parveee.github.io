@@ -400,7 +400,9 @@
      margin-bottom: 0px;
      color: rgb(221, 221, 221);
      line-height: 25px;
+     letter-spacing: 0.5px;
      font-weight: 300;
+     font: size 16px;
  }
 
 
@@ -416,6 +418,15 @@
 
  } */
 
+/* my-services */
+
+
+
+
+
+
+
+
  .main-heading2 {
      font-size: 24px;
      font-weight: 600;
@@ -424,13 +435,98 @@
      padding: 8px 10px 2px 0px;
  }
 
+ /* Service Card - New Layout */
+ .service-card {
+     position: relative;
+     overflow: hidden;
+     padding: 30px 28px;
+     min-height: 200px;
+     border-radius: 20px;
+ }
 
+ .service-card-inner {
+     display: flex;
+     flex-direction: row;
+     align-items: flex-start;
+     gap: 22px;
+     position: relative;
+     z-index: 2;
+ }
 
+ .service-icon-wrap {
+     flex-shrink: 0;
+     width: 100px;
+     height: 100px;
+     border-radius: 18px;
+     border: 1px solid rgba(159, 193, 49, 0.12);
+     background: rgba(30, 33, 30, 0.4);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 14px;
+ }
 
+ .service-icon-wrap .icon-img {
+     width: 65px;
+     height: 65px;
+     opacity: 0.85;
+ }
 
+ .service-text {
+     flex: 1;
+     padding-top: 5px;
+ }
 
+ .service-text .main-heading2 {
+     padding: 0 0 8px 0;
+     margin: 0;
+     font-size: 22px;
+     text-transform: capitalize;
+     font-weight: 700;
+ }
 
+ .service-text .place {
+     font-size: 14px;
+     line-height: 23px;
+     color: rgba(200, 200, 200, 0.75);
+     margin: 0;
+     font-weight: 300;
+ }
 
+ /* Subtle glow effect on bottom-right corner */
+ .service-card-glow {
+     position: absolute;
+     bottom: -30px;
+     right: -30px;
+     width: 150px;
+     height: 150px;
+     background: radial-gradient(circle, rgba(159, 193, 49, 0.10) 0%, rgba(159, 193, 49, 0.03) 40%, transparent 70%);
+     border-radius: 50%;
+     z-index: 1;
+     pointer-events: none;
+     transition: all 0.4s ease;
+ }
+
+ .service-card:hover .service-card-glow {
+     width: 180px;
+     height: 180px;
+     background: radial-gradient(circle, rgba(159, 193, 49, 0.18) 0%, rgba(159, 193, 49, 0.05) 40%, transparent 70%);
+ }
+
+ @media (max-width: 576px) {
+     .service-card-inner {
+         flex-direction: column;
+         gap: 14px;
+     }
+     .service-icon-wrap {
+         width: 80px;
+         height: 80px;
+     }
+     .service-icon-wrap .icon-img {
+         width: 50px;
+         height: 50px;
+     }
+ }
 
 
  /* .areas  */
