@@ -939,3 +939,36 @@
  .custom-close-btn .line2 {
      transform: rotate(-45deg);
  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* e-commerce */
+
+ .hero-contant .row{
+    height: 100vh;
+    
+
+ }
+
+
+ .hero-a{
+    display: flex;
+     /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    color: gold;
+    height: 100%;
+ }
