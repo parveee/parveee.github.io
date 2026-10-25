@@ -32,7 +32,7 @@
                         <div class="col-md-6">
                            <div class="hero-a">
                             <h2 class="h2">UX <span>Research</span></h2>
-                             <a  chref="ewebux.html">
+                             <a  chref="ewebux.html" class="view-project-btn">
                                 More Details
                              </a>
                              <!-- <p>More details</p> -->
@@ -43,7 +43,7 @@
                              <h2 class="h2">
                                  UI <span>Design</span>
                              </h2>
-                              <a  chref="ewebux.html">
+                              <a  chref="ewebux.html" class="view-project-btn">
                                 More Details
                              </a>
                            </div>
@@ -68,11 +68,70 @@
 
 
 
-
-
     <!-- bootstrap script  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- Mouse Move Animation Script -->
+    <script>
+        // =============================================
+        // 1. Custom Cursor Glow (follows mouse smoothly)
+        // =============================================
+        const cursorGlow = document.createElement('div');
+        cursorGlow.id = 'mouse-cursor-glow';
+        cursorGlow.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(159,193,49,0.13) 0%, rgba(159,193,49,0.05) 40%, transparent 70%);
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            transition: opacity 0.4s ease;
+            z-index: 9999;
+            opacity: 0;
+        `;
+        document.body.appendChild(cursorGlow);
+
+        let mouseX = 0, mouseY = 0;
+        let curX = 0, curY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            cursorGlow.style.opacity = '1';
+        });
+
+        document.addEventListener('mouseleave', () => {
+            cursorGlow.style.opacity = '0';
+        });
+
+        // Smooth lerp follow animation
+        function animateCursor() {
+            curX += (mouseX - curX) * 0.1;
+            curY += (mouseY - curY) * 0.1;
+            cursorGlow.style.left = curX + 'px';
+            cursorGlow.style.top = curY + 'px';
+            requestAnimationFrame(animateCursor);
+        }
+        animateCursor();
+
+
+
+        // =============================================
+        // 3. Heading Text - Parallax float on mouse move
+        // =============================================
+        const headings = document.querySelectorAll('.h2');
+        document.addEventListener('mousemove', (e) => {
+            const rx = (e.clientX / window.innerWidth - 0.5) * 20;
+            const ry = (e.clientY / window.innerHeight - 0.5) * 20;
+            headings.forEach(h => {
+                h.style.transition = 'transform 0.4s ease-out';
+                h.style.transform = `translate(${rx * 0.4}px, ${ry * 0.4}px)`;
+            });
+        });
+    </script>
 
 </body>
 
