@@ -976,3 +976,7 @@
     color: gold;
     height: 100%;
  }
+ .hero-a h2{
+    font-size: 75px;
+    padding-bottom: 20px;
+ }
