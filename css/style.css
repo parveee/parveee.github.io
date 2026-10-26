@@ -738,6 +738,7 @@
      .slid-img {
          width: 100%;
      }
+
  }
 
 
@@ -964,6 +965,7 @@
  .hero-contant .row{
     height: 100vh;
     
+    
 
  }
 
@@ -976,7 +978,64 @@
     color: gold;
     height: 100%;
  }
- .hero-a h2{
+ .hero-a h2, .ux-hero-h h2{
     font-size: 75px;
     padding-bottom: 20px;
  }
+ 
+ .back img{
+    width: 50px;
+      display: flex;
+    justify-content: left;
+    
+    /* padding-top: 10px; */
+ }
+.edite{
+    position: relative;
+}
+.back{
+    position: fixed;
+    left: 50px;
+    top: 50px;
+}
+
+
+
+  /* Responsive:text size on mobile */
+ @media (max-width: 768px) {
+     .hero-a h2 {
+         font-size: 50px;
+     }
+     .slid-img {
+         width: 100%;
+     }
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* e-commerce-ux-index-page */
+.ux-p{
+    max-width: 700px;
+    line-height: 2;
+    font-size: 16px;
+}
