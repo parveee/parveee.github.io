@@ -1067,6 +1067,12 @@
     margin: 0px;
     font-size: 80px;
 }
+@media (max-width: 768px) {
+     #hero-ux {
+        height: 100%;
+     }
+     igh
+ }
 
 
 
