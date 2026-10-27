@@ -962,7 +962,7 @@
 
  /* e-commerce */
 
- .hero-contant .row{
+ .uiuxhero-contant .row{
     height: 100vh;
     
     
@@ -975,7 +975,7 @@
      flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: gold;
+    /* color: gold; */
     height: 100%;
  }
  .hero-a h2, .ux-hero-h h2{
@@ -991,7 +991,7 @@
     /* padding-top: 10px; */
  }
 .edite{
-    position: relative;
+    /* position: relative; */
 }
 .back{
     position: fixed;
@@ -1009,7 +1009,10 @@
      .slid-img {
          width: 100%;
      }
-
+     .uiuxhero-contant .row{
+        gap: 0px;
+     }
+     
  }
 
 
@@ -1035,7 +1038,28 @@
 
  /* e-commerce-ux-index-page */
 .ux-p{
-    max-width: 700px;
+    max-width: 1100px;
     line-height: 2;
-    font-size: 16px;
+    font-size: 18px;
+    padding: 50px 50px;
+    margin-top: 20px;
+}
+.ux-hero-p{
+    color:rgb(221, 221, 221) ;
+    font-size: 18px;
+}
+.ux-hero-h{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.hero-ux{
+    height: 100vh;
+}
+.ux-hero-h .h2{
+    padding-bottom: 0px;
+    margin: 0px;
+    font-size: 80px;
 }
