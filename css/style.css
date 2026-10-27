@@ -962,13 +962,15 @@
 
  /* e-commerce */
 
- .uiuxhero-contant .row{
+ #uiuxhero{
     height: 100vh;
     
     
 
  }
-
+.uiuxhero-contant .row{
+    height: 90vh;
+}
 
  .hero-a{
     display: flex;
@@ -977,6 +979,7 @@
     justify-content: center;
     /* color: gold; */
     height: 100%;
+
  }
  .hero-a h2, .ux-hero-h h2{
     font-size: 75px;
