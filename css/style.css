@@ -1045,8 +1045,11 @@
     margin-top: 20px;
 }
 .ux-hero-p{
-    color:rgb(221, 221, 221) ;
+    color:rgb(212, 212, 212) ;
     font-size: 18px;
+}
+#hero-ux{
+    height: 100vh;
 }
 .ux-hero-h{
     display: flex;
@@ -1054,8 +1057,9 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    padding-top: 100px;
 }
-.hero-ux{
+#hero-ux{
     height: 100vh;
 }
 .ux-hero-h .h2{
@@ -1063,3 +1067,39 @@
     margin: 0px;
     font-size: 80px;
 }
+
+
+
+
+
+
+
+/* process */
+ .process{
+    color: rgb(221, 221, 221);
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
