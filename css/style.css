@@ -969,7 +969,7 @@
 
  }
 .uiuxhero-contant .row{
-    height: 90vh;
+    height: 100vh;
 }
 
  .hero-a{
@@ -1046,13 +1046,14 @@
     font-size: 18px;
     padding: 50px 50px;
     margin-top: 20px;
+    
 }
 .ux-hero-p{
     color:rgb(212, 212, 212) ;
     font-size: 18px;
 }
 #hero-ux{
-    height: 100vh;
+    /* height: 100vh; */
 }
 .ux-hero-h{
     display: flex;
@@ -1063,7 +1064,7 @@
     padding-top: 100px;
 }
 #hero-ux{
-    height: 100vh;
+    /* height: 100vh; */
 }
 .ux-hero-h .h2{
     padding-bottom: 0px;
@@ -1087,7 +1088,50 @@
  .process{
     color: rgb(221, 221, 221);
  }
-
+ .ux-h3{
+    border-bottom: solid 0.5px rgba(158, 191, 49, 0.421);
+    padding-bottom: 15px;
+ }
+ /* .ux{
+    background: linear-gradient(145deg, #1e211e, #0c0d0c);
+     margin: 80px 20px;
+     border-radius: 30px; */
+     /* min-width: 300px; */
+    
+     /* height: 100%; */
+     /* padding: 10px 10px;
+     box-sizing: border-box;
+     display: block; */
+      /* margin-bottom: 0px;
+     color: rgb(221, 221, 221);
+     line-height: 25px;
+     letter-spacing: 0.5px;
+     font-weight: 300;
+     font: size 16px;
+ } */
+.uxcard{
+    padding: 30px 30px 30px 40px;
+     background: linear-gradient(145deg, #1e211e, #0c0d0c);
+     border-radius: 30px; 
+     margin-top: 20px;
+     min-width: 300px;
+     color: rgba(180, 180, 180, 0.893);
+     line-height: 25px;
+     letter-spacing: 0.5px;
+     /* border: 1px solid rgba(159, 193, 49, 0.1); */
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+     height: 100%;
+     /* /* font-weight: 300; */
+     font-size: 16px; 
+}
+.ux-h4{
+    color:rgba(201, 199, 199, 0.893) ;
+    padding-bottom: 19px;
+}
+#process
+{
+    padding: 150px 0px;
+}
 
 
 
