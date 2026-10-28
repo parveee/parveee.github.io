@@ -1174,7 +1174,20 @@
      display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 
 
+
+
+
+.wire-img{
+    max-width: 600px;
+    padding: 30px;
+}
+.wife-img-g{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
