@@ -676,10 +676,11 @@
  }
 
  .slid-desc {
-     font-size: 14px;
+     font-size: 15px;
      color: rgba(180, 180, 180, 1);
      font-weight: 300;
      line-height: 24px;
+     letter-spacing: 0.5px;
      margin: 0;
  }
 
@@ -964,6 +965,7 @@
 
  #uiuxhero{
     height: 100vh;
+    overflow: none;
     
     
 
@@ -1054,6 +1056,7 @@
 }
 #hero-ux{
     /* height: 100vh; */
+    overflow: none;
 }
 .ux-hero-h{
     display: flex;
@@ -1063,13 +1066,14 @@
     height: 100%;
     padding-top: 100px;
 }
-#hero-ux{
+.hero-ux{
     /* height: 100vh; */
+    overflow:none;
 }
 .ux-hero-h .h2{
     padding-bottom: 0px;
     margin: 0px;
-    font-size: 80px;
+    font-size: 100px;
 }
 @media (max-width: 768px) {
      #hero-ux {
@@ -1089,9 +1093,13 @@
     color: rgb(221, 221, 221);
  }
  .ux-h3{
-    border-bottom: solid 0.5px rgba(158, 191, 49, 0.421);
+    font-family: "K2D", sans-serif;
+    border-bottom: solid 0.5px rgba(109, 109, 109, 0.421);
     padding-bottom: 15px;
+    color: rgba(159, 193, 49, 1);
+    letter-spacing: 1px;
  }
+ 
  /* .ux{
     background: linear-gradient(145deg, #1e211e, #0c0d0c);
      margin: 80px 20px;
@@ -1125,12 +1133,16 @@
      font-size: 16px; 
 }
 .ux-h4{
-    color:rgba(201, 199, 199, 0.893) ;
+    color:rgba(190, 190, 190, 0.893) ;
     padding-bottom: 19px;
 }
-#process
+.process
 {
-    padding: 150px 0px;
+    padding: 80px 0px;
+}
+.points li span{
+    font-size: 15px;
+    color: rgba(142, 142, 142, 0.893);
 }
 
 
@@ -1148,11 +1160,21 @@
 
 
 
+/* user flow */
 
+.flowimg{
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
 
-
-
-
+.p-flowimg{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
