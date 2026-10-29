@@ -1190,8 +1190,11 @@
     flex-direction: column;
 }
 @media (max-width: 768px) {
-     .wire-img {
-        width: 600px;
+     .wire-img, .flowimg{
+        width: 300px;
+     }
+     .ux-hero-h .h2{
+        font-size: 75px;
      }
     
  }
