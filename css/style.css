@@ -1198,3 +1198,57 @@
      }
     
  }
+ .home-hieght{
+    height: 1600px;
+ }
+.abouth-hieght{
+    height: 600px;
+}
+
+
+
+
+
+
+
+
+ @media (max-width: 768px) {
+    .home-hieght{
+    height: auto;
+ } 
+    .abouth-hieght{
+    height: auto;
+}
+    
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* carui */
+ .car-img1{
+    height: 1600px;
+ }
+ 
+
+
+ @media (max-width: 768px) {
+    .car-img1{
+    height: auto;
+ } 
+ 
+    
+ }

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>car app</title>
+
+
+     <!-- bootstrap script  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+     <!-- h2 font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+
+     <section id="uiuxhero">
+        <div class="container">
+            <div class="uiuxhero-contant">
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+
+                        <div class="hero-a edite">
+                            <a class="back" href="index.html">
+                                <img src="img/left-aroow.svg" alt="">
+                            </a>
+                            <h2 class="h2">UX <span>Research</span></h2>
+                            <a class="view-project-btn" href="carux.html">
+                                More Details
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="hero-a">
+                            <h2 class="h2">
+                                UI <span>Design</span>
+                            </h2>
+                            <a class="view-project-btn" href="carui.html">
+                                More Details
+                            </a>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- bootstrap script  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Mouse Move Animation Script -->
+    <script>
+        // =============================================
+        // 1. Custom Cursor Glow (follows mouse smoothly)
+        // =============================================
+        const cursorGlow = document.createElement('div');
+        cursorGlow.id = 'mouse-cursor-glow';
+        cursorGlow.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(159,193,49,0.13) 0%, rgba(159,193,49,0.05) 40%, transparent 70%);
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            transition: opacity 0.4s ease;
+            z-index: 9999;
+            opacity: 0;
+        `;
+        document.body.appendChild(cursorGlow);
+
+        let mouseX = 0, mouseY = 0;
+        let curX = 0, curY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            cursorGlow.style.opacity = '1';
+        });
+
+        document.addEventListener('mouseleave', () => {
+            cursorGlow.style.opacity = '0';
+        });
+
+        // Smooth lerp follow animation
+        function animateCursor() {
+            curX += (mouseX - curX) * 0.1;
+            curY += (mouseY - curY) * 0.1;
+            cursorGlow.style.left = curX + 'px';
+            cursorGlow.style.top = curY + 'px';
+            requestAnimationFrame(animateCursor);
+        }
+        animateCursor();
+
+
+
+        // =============================================
+        // 3. Heading Text - Parallax float on mouse move
+        // =============================================
+        const headings = document.querySelectorAll('.h2');
+        document.addEventListener('mousemove', (e) => {
+            const rx = (e.clientX / window.innerWidth - 0.5) * 20;
+            const ry = (e.clientY / window.innerHeight - 0.5) * 20;
+            headings.forEach(h => {
+                h.style.transition = 'transform 0.4s ease-out';
+                h.style.transform = `translate(${rx * 0.4}px, ${ry * 0.4}px)`;
+            });
+        });
+    </script>
+</body>
+</html>
