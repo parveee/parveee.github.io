@@ -554,14 +554,14 @@
  }
 
  .app img {
-     width: 50px;
+     width: 60px;
 
 
  }
 
  .app {
-     width: 110px;
-     height: 110px;
+     width: 12px;
+     height: 120px;
      display: flex;
      min-width: 110px;
      justify-content: center;
@@ -598,7 +598,7 @@
  }
 
  .card {
-     margin: 0;
+     margin: 1px;
  }
 
  .app {
