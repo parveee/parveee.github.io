@@ -1251,7 +1251,9 @@
  .car-img1{
     height: 1600px;
  }
- 
+ .car-img2{
+    height: 1350px;
+ }
 
 
  @media (max-width: 768px) {
