@@ -1259,13 +1259,76 @@
  @media (max-width: 768px) {
     .car-img1{
     height: auto;
- } 
- 
-    
+ }   
  }
+
+
+
+
+
  .car-img3{
      height: 1050px;
  }
  .car-img4{
      height: 1150px;
+ }
+ 
+ @media (max-width: 768px) {
+    .car-img3, .car-img4{
+    height: auto;
+ }   
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.user{
+    display: flex;
+    flex-direction: row;
+}
+.user img{
+    padding-right: 20px;
+    padding-bottom: 25px;
+    width: 100px;
+}
+.name-eusr{
+    padding-top: 15px;
+}
+.user-pp{
+    margin-bottom: none;
+}
+ .user-n{
+     font-size: 17px;
+     font-weight: 500;
+     color: rgb(190, 190, 190);
+    
+ }
+ .user-p li{
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+   
+ }
+ .user-p{
+    padding-bottom: 20px;
+    padding-top: 3px;
  }
